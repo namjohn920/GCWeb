@@ -28,6 +28,12 @@
 		vertical-align: middle;
 	}
 
+	.wb-srch-sub {
+		float: none;
+		position: absolute;
+		right: 15px;
+	}
+
 	input {
 		border-color: #e0e0e0;
 		border-right: 0;
@@ -35,8 +41,13 @@
 		box-shadow: none;
 		color: #555;
 		margin-right: -4px;
-		min-width: 246px;
 		position: relative;
+	}
+
+	& > form {
+		& .form-group:first-child{
+			width: 100%;
+		}
 	}
 }
 
@@ -50,6 +61,8 @@
 		}
 	}
 }
+
+
 
 
 //
@@ -135,4 +148,8 @@
 		padding-bottom: 8px;
 		padding-top: 8px;
 	}
+}
+
+input#wb-srch-q {
+	width: 100%;
 }
